@@ -1,0 +1,59 @@
+<style>
+    .basicinfo {
+        margin: 15px 0;
+    }
+
+    .basicinfo .row > .col-xs-4 {
+        padding-right: 0;
+    }
+
+    .basicinfo .row > div {
+        margin: 5px 0;
+    }
+</style>
+<div id="content-container" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {include file="common/sidenav" /}
+        </div>
+    <div class="col-md-9">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h2 class="page-header">
+                    {:__('Personal achievement')}
+                </h2>
+                <div class="row user-baseinfo">
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <!-- Content -->
+                        <div class="ui-content">
+                            <div class="basicinfo">
+                                <div class="row">
+                                    <div class="col-xs-4 col-md-2">{:__('class ranking')}</div>
+                                    <div class="col-xs-8 col-md-4">{$list.0.classr} {:__('Ranking')}</div>
+                                    <div class="col-xs-4 col-md-2">{:__('class Rank')}</div>
+                                    <div class="col-xs-8 col-md-4">{$list.0.grader} {:__('Ranking')}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-md-2">{:__('total score')}</div>
+                                    <div class="col-xs-8 col-md-4">{$list.0.sum} {:__('branch')}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-md-2">{:__('grade scores of Chinese')}</div>
+                                    <div class="col-xs-8 col-md-4">{$list.0.chinese} {:__('branch')}</div>
+                                    <div class="col-xs-4 col-md-2">{:__('grade scores of math')}</div>
+                                    <div class="col-xs-8 col-md-4">{$list.0.math} {:__('branch')}</div>
+                                    <div class="col-xs-4 col-md-2">{:__('grade scores of English')}</div>
+                                    <div class="col-xs-8 col-md-4">{$list.0.English} {:__('branch')}</div>
+                                    <div class="col-xs-4 col-md-2">{:__('grade scores of physics')}</div>
+                                    <div class="col-xs-8 col-md-4">{$list.0.physics} {:__('branch')}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-md-2">{:__('grade scores of chemistry')}</div>
+                                    <div class="col-xs-8 col-md-4">{$list.0.chemistry} {:__('branch')}</div>
+                                    <div class="col-xs-4 col-md-2">{:__('grade scores of biology')}</div>
+                                    <div class="col-xs-8 col-md-4">{$list.0.biology} {:__('branch')}</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
